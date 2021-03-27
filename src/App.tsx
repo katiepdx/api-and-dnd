@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css';
+import CharactersList from './components/CharactersList';
 import getCharacters from './services/character-utils'
 
 function App() {
   const [characters, setCharacters] = useState([])
-  
+
   useEffect(() => {
     getCharacters()
       .then(characters => setCharacters(characters))
@@ -13,8 +14,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Characters</h1>
-        {JSON.stringify(characters)}
+        <h1>Hey Arnold Characters</h1>
+        <CharactersList characterProps={characters} />
       </header>
     </div>
   );
