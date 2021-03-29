@@ -1,4 +1,4 @@
-const Loading = () => {
+const Loading: Function = (): JSX.Element => {
   return (
     <div className='loading'>
       Loading...

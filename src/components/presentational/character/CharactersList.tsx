@@ -5,12 +5,13 @@ interface CharacterType {
   image: string;
 }
 interface CharactersListProps {
-  characterProps: Array<CharacterType>
+  characterProps: Array<CharacterType>;
+  currDragged: Function
 }
 
 const CharactersList: Function = ({ characterProps }: CharactersListProps): JSX.Element[] => (
-  characterProps.map(character =>
-    <CharacterItem character={character} />
+  characterProps.map((character, index) =>
+    <CharacterItem character={character} index={index} key={character._id} />
   )
 )
 

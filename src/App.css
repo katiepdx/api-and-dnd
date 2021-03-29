@@ -3,10 +3,12 @@
 }
 
 .all-characters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .loading {
