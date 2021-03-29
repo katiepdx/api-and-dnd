@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface CharacterType {
   _id: string;
   name: string;
@@ -12,7 +10,7 @@ interface CharacterItemProp {
 
 const CharacterItem = ({ character }: CharacterItemProp): JSX.Element => {
   return (
-    <div>
+    <div className='single-character'>
       <h2>{character.name}</h2>
       <img src={character.image} alt={character.name} />
     </div>

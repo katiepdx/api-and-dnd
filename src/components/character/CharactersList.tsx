@@ -1,6 +1,4 @@
-import React from 'react'
 import CharacterItem from './CharacterItem'
-
 interface CharacterType {
   _id: string;
   name: string;
