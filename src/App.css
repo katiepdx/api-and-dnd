@@ -4,11 +4,8 @@
 
 .all-characters {
   color: white;
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .loading {
@@ -16,17 +13,17 @@
 }
 
 img {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
 }
 
 .single-character {
   color: rgb(39, 39, 39);
-  width: 220px;
-  height: 320px;
   background-color: rgb(247, 194, 194);
-  border-radius: 2rem;
-  margin: 2rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 22vw;
 }
 
 footer {
